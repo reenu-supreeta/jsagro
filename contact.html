@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – JS Agro Industries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Roboto',sans-serif; background:#f9f9f9; color:#333; }
+    header { background:#2e7d32; padding:10px 20px; position:sticky; top:0; z-index:999; }
+    .navbar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+    .navbar img { height:50px; }
+    .navbar nav { display:flex; gap:12px; flex-wrap:wrap; }
+    .navbar nav a { color:#fff; font-weight:bold; text-decoration:none; }
+    .navbar nav a:hover { text-decoration:underline; }
+
+    .contact-section {
+      padding:60px 20px;
+      max-width:1100px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .contact-section h2 {
+      font-family:'Raleway',sans-serif;
+      font-size:2.4rem;
+      color:#2e7d32;
+      margin-bottom:10px;
+    }
+
+    .contact-section p.lead {
+      margin-bottom:30px;
+      color:#555;
+      font-size:1.1rem;
+    }
+
+    .contact-wrapper {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-around;
+      gap:40px;
+    }
+
+    .contact-form, .contact-info {
+      flex:1;
+      min-width:300px;
+      max-width:450px;
+    }
+
+    form {
+      background:#fff;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 0 20px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width:100%;
+      padding:12px;
+      margin:10px 0 20px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      font-family:'Roboto',sans-serif;
+    }
+
+    form button {
+      background:#ffb300;
+      border:none;
+      padding:14px 25px;
+      border-radius:5px;
+      font-weight:bold;
+      font-size:1rem;
+      cursor:pointer;
+      transition:background-color .3s;
+    }
+
+    form button:hover { background:#ffa000; }
+
+    .contact-info p {
+      margin-bottom:15px;
+      line-height:1.6;
+      text-align:left;
+    }
+
+    .contact-info a {
+      color:#2e7d32;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    .contact-info a:hover { text-decoration:underline; }
+
+    .map-section {
+      margin-top:60px;
+      width:100%;
+    }
+
+    .map-container {
+      width:100%;
+      height:500px;
+      border:none;
+      margin:0;
+      padding:0;
+      display:block;
+    }
+
+    footer {
+      background:#111;
+      color:#bbb;
+      text-align:center;
+      padding:20px;
+      font-size:.9rem;
+      margin-top:40px;
+    }
+
+    @media (max-width:600px) {
+      .contact-section { padding:40px 10px; }
+      .contact-section h2 { font-size:1.8rem; }
+      form { padding:20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <img src="images/logo.png" alt="JS Agro Industries Logo">
+      <nav>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p class="lead">We’re here to answer your queries! Feel free to get in touch ↓</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <form action="mailto:jsagroindustriesguntur@gmail.com" method="POST" enctype="text/plain">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <input type="text" name="Subject" placeholder="Subject" required>
+          <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <p><strong>📍 Address:</strong><br>D.No. 6‑6‑37 6/1, ArundelPet, Sailok Complex,<br>Guntur 522002, Andhra Pradesh</p>
+        <p><strong>📞 Phone:</strong><br><a href="tel:+918885553642">+91 88855 53642</a></p>
+        <p><strong>📧 Email:</strong><br><a href="mailto:jsagroindustriesguntur@gmail.com">jsagroindustriesguntur@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <iframe class="map-container"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.227!2d80.438111!3d16.305141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75c09d6eaa7b:0x90f3796b2f130e4c!2sSailok%20Complex%2C%20Arundelpet%2C%20Guntur!5e0!3m2!1sen!2sin!4v1620000000000"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 JS Agro Industries. All rights reserved.</p>
+  </footer>
+</body>
+</html>
