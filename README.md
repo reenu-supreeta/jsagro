@@ -43,4 +43,4 @@ https://reenu-supreeta.github.io/jsagro/
 ---
 
 ## 📄 License
-This project is for educational and demonstration purposes.
+This project is for personal, educational and demonstration purposes.
